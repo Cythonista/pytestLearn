@@ -3,5 +3,7 @@ from pytest_mock import MockerFixture
 
 
 class TestCar:
-    pass
+
+    def test_name(self):
+        pass
 

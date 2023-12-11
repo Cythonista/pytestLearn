@@ -1,7 +1,6 @@
 import pytest
 
-from src.domain.car import Car
-from pytest_mock import MockerFixture
+from src.app.domain.car import Car
 
 
 @pytest.fixture

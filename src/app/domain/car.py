@@ -8,8 +8,8 @@ class Car(object):
         self.__height = height
 
     @property
-    def get_name(self):
-        return self.__car_name.get_car_name
+    def get_name(self) -> CarName:
+        return self.__car_name
 
     @property
     def get_width(self) -> int:

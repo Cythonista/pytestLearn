@@ -2,24 +2,24 @@ from dataclasses import FrozenInstanceError
 
 from pytest import fixture, raises
 
-from src.app.domain.car_name import CarName
+from src.app.domain.car_width import CarWidth
 
 
-class TestCarName:
+class TestCarWidth:
     @fixture
     def target(self):
-        return CarName("TestCarName")
+        return CarWidth(100)
 
-    def test_get_car_name(self, target):
+    def test_get_car_width(self, target):
         """
-        get_car_name関数のテスト
+        get_car_width関数のテスト
         getterから値を取得できること
 
         :param target:
         :return:
         """
-        expected = CarName("TestCarName")
-        assert target.get_car_name == expected.get_car_name
+        expected = CarWidth(100)
+        assert target.get_car_width == expected.get_car_width
 
     def test_dataclass_frozen(self, target):
         """
@@ -29,7 +29,7 @@ class TestCarName:
         :return:
         """
         with raises(FrozenInstanceError):
-            target.car_name = CarName("Test")
+            target.car_width = CarWidth(120)
 
     def test_dataclass_slots(self, target):
         """
@@ -40,4 +40,4 @@ class TestCarName:
         :return:
         """
         with raises(TypeError):
-            target.nothing_variable = CarName("Test")
+            target.nothing_variable = CarWidth(100)

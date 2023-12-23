@@ -1,5 +1,6 @@
-from src.app import main
 from pytest_mock import MockerFixture
+
+from src.app import main
 
 
 def test_add():

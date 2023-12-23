@@ -1,20 +1,24 @@
+from dataclasses import dataclass
+
 from src.app.domain.car_name import CarName
+from src.app.domain.car_width import CarWidth
+from src.app.domain.car_height import CarHeight
 
 
+@dataclass(init=True, frozen=True, slots=True)
 class Car(object):
-    def __init__(self, car_name: CarName, width, height) -> None:
-        self.__car_name = car_name
-        self.__width = width
-        self.__height = height
+    car_name: CarName
+    car_width: CarWidth
+    car_height: CarHeight
 
     @property
-    def get_name(self) -> CarName:
-        return self.__car_name
+    def get_car_name(self) -> CarName:
+        return self.car_name
 
     @property
-    def get_width(self) -> int:
-        return self.__width
+    def get_car_width(self) -> CarWidth:
+        return self.car_width
 
     @property
-    def get_height(self) -> int:
-        return self.__height
+    def get_car_height(self) -> CarHeight:
+        return self.car_height

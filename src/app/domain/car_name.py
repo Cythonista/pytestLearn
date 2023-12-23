@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(init=True, frozen=True, slots=True)
 class CarName(object):
     car_name: str
 

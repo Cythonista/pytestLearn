@@ -1,2 +1,2 @@
 # pytestLearn
-Test Repository
+pytestのお試しリポジトリです

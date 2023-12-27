@@ -12,13 +12,13 @@ class Car(object):
     car_height: CarHeight
 
     @property
-    def get_car_name(self) -> CarName:
+    def car_name(self) -> CarName:
         return self.car_name
 
     @property
-    def get_car_width(self) -> CarWidth:
+    def car_width(self) -> CarWidth:
         return self.car_width
 
     @property
-    def get_car_height(self) -> CarHeight:
+    def car_height(self) -> CarHeight:
         return self.car_height

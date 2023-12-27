@@ -11,35 +11,35 @@ class TestCar:
     def target(self):
         return Car(CarName("Car"), CarWidth(100), CarHeight(100))
 
-    def test_get_car_name(self, target):
+    def test_car_name(self, target):
         """
-        get_car_name関数のテスト
+        car_name関数のテスト
         getterから値を取得できること
 
         :param target:
         :return:
         """
         expected = Car(CarName("Car"), CarWidth(100), CarHeight(100))
-        assert target.get_car_name == expected.get_car_name
+        assert target.car_name == expected.car_name
 
-    def test_get_car_width(self, target):
+    def test_car_width(self, target):
         """
-        get_car_width関数のテスト
+        car_width関数のテスト
         getterから値を取得できること
 
         :param target:
         :return:
         """
         expected = Car(CarName("Car"), CarWidth(100), CarHeight(100))
-        assert target.get_car_width == expected.get_car_width
+        assert target.car_width == expected.car_width
 
-    def test_get_car_height(self, target):
+    def test_car_height(self, target):
         """
-        get_car_width関数のテスト
+        car_width関数のテスト
         getterから値を取得できること
 
         :param target:
         :return:
         """
         expected = Car(CarName("Car"), CarWidth(100), CarHeight(100))
-        assert target.get_car_height == expected.get_car_height
+        assert target.car_height == expected.car_height

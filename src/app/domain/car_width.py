@@ -6,5 +6,5 @@ class CarWidth(object):
     car_width: int
 
     @property
-    def get_car_width(self) -> int:
+    def car_width(self) -> int:
         return self.car_width

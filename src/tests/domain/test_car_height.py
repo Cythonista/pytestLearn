@@ -10,16 +10,16 @@ class TestCarHeight:
     def target(self):
         return CarHeight(100)
 
-    def test_get_car_height(self, target):
+    def test_car_height(self, target):
         """
-        get_car_height関数のテスト
+        car_height関数のテスト
         getterから値を取得できること
 
         :param target:
         :return:
         """
         expected = CarHeight(100)
-        assert target.get_car_height == expected.get_car_height
+        assert target.car_height == expected.car_height
 
     def test_dataclass_frozen(self, target):
         """

@@ -10,7 +10,7 @@ class TestCarWidth:
     def target(self):
         return CarWidth(100)
 
-    def test_get_car_width(self, target):
+    def test_car_width(self, target):
         """
         get_car_width関数のテスト
         getterから値を取得できること
@@ -19,7 +19,7 @@ class TestCarWidth:
         :return:
         """
         expected = CarWidth(100)
-        assert target.get_car_width == expected.get_car_width
+        assert target.car_width == expected.car_width
 
     def test_dataclass_frozen(self, target):
         """

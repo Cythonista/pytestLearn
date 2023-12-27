@@ -10,7 +10,7 @@ class TestCarName:
     def target(self):
         return CarName("TestCarName")
 
-    def test_get_car_name(self, target):
+    def test_car_name(self, target):
         """
         get_car_name関数のテスト
         getterから値を取得できること
@@ -19,7 +19,7 @@ class TestCarName:
         :return:
         """
         expected = CarName("TestCarName")
-        assert target.get_car_name == expected.get_car_name
+        assert target.car_name == expected.car_name
 
     def test_dataclass_frozen(self, target):
         """

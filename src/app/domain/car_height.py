@@ -6,5 +6,5 @@ class CarHeight(object):
     car_height: int
 
     @property
-    def get_car_height(self) -> int:
+    def car_height(self) -> int:
         return self.car_height

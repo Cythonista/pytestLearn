@@ -25,6 +25,7 @@ class TestCarName:
         """
         dataclass frozenのテスト
         無理やりインスタンス変数の中身を変更しようとしてFrozenInstanceErrorが出ること
+
         :param target:
         :return:
         """

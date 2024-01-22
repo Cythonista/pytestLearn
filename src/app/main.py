@@ -1,4 +1,7 @@
 from random import random
+from typing import List
+
+from pystreamapi import Stream
 
 
 def main():
@@ -15,6 +18,13 @@ def sub(x, y):
 
 def get_random():
     return random()
+
+
+def sort_data(array):
+    return Stream.of(array) \
+        .filter(lambda x: x is not None) \
+        .sorted() \
+        .to_list()
 
 
 if __name__ == '__main__':
